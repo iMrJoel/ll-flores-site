@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>LL Flores e Decorações</title>
+  <link rel="icon" href="images/icon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ccecd4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #2f5d50;
+      letter-spacing: 2px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      background-color: #5fb3a2;
+      color: #ffffff;
+      padding: 18px 50px;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      box-shadow: 0 6px 0 #3f8f80;
+      position: relative;
+    }
+
+    .btn:hover {
+      background-color: #4aa596;
+    }
+
+    .btn:active {
+      top: 4px;
+      box-shadow: 0 2px 0 #3f8f80;
+      transform: scale(0.97);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #2f5d50;
+      opacity: 0.7;
+    }
+
+    /* Botão flutuante do WhatsApp - canto superior esquerdo */
+    .whatsapp {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25d366;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+      transition: transform 0.2s ease;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp img {
+      width: 32px;
+      height: 32px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>LL FLORES E DECORAÇÕES</h1>
+
+    <div class="buttons">
+      <a href="sections/cestas.html" class="btn">CESTAS</a>
+      <a href="sections/flores.html" class="btn">FLORES</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 - LL Flores e Decorações
+  </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a 
+    href="https://wa.me/553399827705" 
+    class="whatsapp" 
+    target="_blank" 
+    aria-label="Falar no WhatsApp">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+      alt="WhatsApp">
+  </a>
+
+</body>
+</html>
