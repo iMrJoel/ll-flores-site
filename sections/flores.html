@@ -1,226 +1,159 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8" />
-<title>Flores - LL Flores e Decorações</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Flores - LL Flores e Decorações</title>
+
 <style>
+
 body {
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;
-background-color: #ccecd4;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccecd4;
 }
 
+/* CABEÇALHO */
 
 header {
-text-align: center;
-padding: 30px 20px;
-background-color: #b7e3cc;
-color: #2f5d50;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #b7e3cc;
+    color: #2f5d50;
 }
 
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* CATÁLOGO */
 
 .catalogo {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-gap: 20px;
-padding: 30px;
-max-width: 1200px;
-margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* CARD */
 
 .item {
-background-color: #ffffff;
-border-radius: 12px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-overflow: hidden;
-transition: transform 0.2s ease;
-}
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
 
+    aspect-ratio: 1 / 1;
+}
 
 .item:hover {
-transform: translateY(-4px);
+    transform: translateY(-4px);
 }
 
+/* IMAGEM */
 
 .item img {
-width: 100%;
-aspect-ratio: 1 / 1;
-object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-
-.info {
-padding: 15px;
-text-align: center;
-}
-
-
-.info h3 {
-margin: 5px 0;
-font-size: 1.1rem;
-color: #2f5d50;
-}
-
-
-.preco {
-font-size: 1.2rem;
-font-weight: bold;
-color: #4aa596;
-margin-top: 8px;
-}
-
+/* BOTÃO VOLTAR */
 
 .voltar {
-display: block;
-text-align: center;
-margin: 20px;
-text-decoration: none;
-color: #2f5d50;
-font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 30px;
+    text-decoration: none;
+    color: #2f5d50;
+    font-weight: bold;
 }
-  </style>
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Catálogo de Flores</h1>
-  <p>Fotos meramente ilustrativas produzidas pela empresa</p>
-  <p>Consulte disponibilidade, ou personalizamos para você</p>
+    <h1>Catálogo de Flores</h1>
+
+    <p>Fotos meramente ilustrativas produzidas pela empresa</p>
+
+    <p>Consulte disponibilidade ou personalizamos para você</p>
 </header>
 
 <section class="catalogo">
 
-  <!-- Item 1 -->
-           <div class="item">
-    <img src="../produtos/fotoflor35.png" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
+    <!-- ITEM 3 -->
+    <div class="item">
+        <img src="../produtos/fotoflor37.jpeg" alt="Arranjo floral 37">
     </div>
-  </div>
+
+    <!-- ITEM 4 -->
+    <div class="item">
+        <img src="../produtos/fotoflor39.jpeg" alt="Arranjo floral 39">
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="item">
+        <img src="../produtos/fotoflor40.jpeg" alt="Arranjo floral 40">
+    </div>
+
+    <!-- ITEM 6 -->
+    <div class="item">
+        <img src="../produtos/fotoflor43.jpeg" alt="Arranjo floral 43">
+    </div>
+
+    <!-- ITEM 7 -->
+    <div class="item">
+        <img src="../produtos/fotoflor44.jpeg" alt="Arranjo floral 44">
+    </div>
+
+    <!-- ITEM 8 -->
+    <div class="item">
+        <img src="../produtos/fotoflor45.jpeg" alt="Arranjo floral 45">
+    </div>
+
+    <!-- ITEM 9 -->
+    <div class="item">
+        <img src="../produtos/fotoflor46.jpeg" alt="Arranjo floral 46">
+    </div>
+
+    <!-- ITEM 11 -->
+    <div class="item">
+        <img src="../produtos/fotoflor48.jpeg" alt="Arranjo floral 48">
+    </div>
+
+    <!-- ITEM 12 -->
+    <div class="item">
+        <img src="../produtos/fotoflor49.jpeg" alt="Arranjo floral 49">
+    </div>
+
+    <!-- ITEM 13 -->
+    <div class="item">
+        <img src="../produtos/fotoflor51.jpeg" alt="Arranjo floral 51">
+    </div>
+
+    <!-- ITEM 14 -->
+    <div class="item">
+        <img src="../produtos/fotoflor52.jpeg" alt="Arranjo floral 52">
+    </div>
+
 </section>
 
-           <div class="item">
-    <img src="../produtos/fotoflor36.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor37.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor39.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor40.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor43.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor44.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor45.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor46.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor47.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor48.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor49.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor51.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-
-           <div class="item">
-    <img src="../produtos/fotoflor52.jpeg" alt="" />
-    <div class="info">
-      <h3></h3>
-      <div class="preco"></div>
-    </div>
-  </div>
-</section>
-</section>
-
-<a class="voltar" href="../index.html">← Voltar para a página inicial</a>
+<a class="voltar" href="../index.html">
+    ← Voltar para a página inicial
+</a>
 
 </body>
 </html>
+```
